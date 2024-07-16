@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Application</title>
+    </head>
+    <body>
+        <h1>Job Application</h1><br>
+        <form>
+            <label for="role">Role:</label><br>
+            <input type="text" id="role" name="fname" value="Frontend Developer" required><br>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value="Jhon" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value="Nike" required><br>
+            <label for="education">Education:</label>
+            <select name="cars" id="cars" required>
+                <option value="btech">B.Tech</option>
+                <option value="be">B.E</option>
+                <option value="mtech">M.Tech</option>
+                <option value="me">M.E</option>
+            </select>
+            <p><label for="skills">Skills:</label></p>
+            <textarea id="skills" name="skills" rows="4" cols="50" required>Enter Your Skills.</textarea>
+            <br>
+            <p>Gender:</p>
+            <input type="radio" id="gmale1" name="gender" value="male">
+            <label for="gmale1">Male</label><br>
+            <input type="radio" id="gfemale1" name="gender" value="female">
+            <label for="gfemale1">Female</label><br>  
+            <input type="radio" id="gother1" name="gender" value="other">
+            <label for="gother1">Other</label><br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Enter a phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91" required><br><br>
+            <p><label for="addrs">Address:</label></p>
+            <textarea id="addrs" name="addrs" rows="6" cols="50">Address</textarea>
+            <br>
+            <label for="myfile">Resume:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" required>  I Agree 
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
